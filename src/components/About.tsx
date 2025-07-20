@@ -5,23 +5,23 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Our Mission',
-      description: 'To foster innovative tourism solutions that celebrate Mombasa\'s rich cultural heritage while creating sustainable economic opportunities for local communities.'
+      title: 'Innovation Hub',
+      description: 'Coordinating incubation and refinement of innovative tourism ideas while fostering development of niche products for sustainable growth.'
     },
     {
       icon: Heart,
-      title: 'Our Vision',
-      description: 'A thriving coastal tourism ecosystem where tradition meets innovation, empowering local entrepreneurs and enriching visitor experiences.'
+      title: 'Inclusive Tourism',
+      description: 'Supporting grassroots organizations and youth/women-led groups that emphasize inclusivity and reflect Mombasa\'s rich cultural heritage.'
     },
     {
       icon: Globe,
-      title: 'Our Impact',
-      description: 'Connecting global travelers with authentic Swahili culture while supporting local startups and preserving our coastal heritage.'
+      title: 'Local Empowerment',
+      description: 'Partnering with organizations to provide training in product development and business acumen for the digital tourism market.'
     }
   ];
 
   const team = [
-    { name: 'Peter Kibe', role: 'Director & Cultural Heritage Expert', background: 'bg-primary' },
+    { name: 'Amina Hassan', role: 'Director & Cultural Heritage Expert', background: 'bg-primary' },
     { name: 'Omar Kimathi', role: 'Innovation Lead & Tech Strategist', background: 'bg-secondary' },
     { name: 'Fatuma Ali', role: 'Community Engagement Manager', background: 'bg-accent' },
   ];
@@ -34,9 +34,12 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             About <span className="bg-gradient-ocean bg-clip-text text-transparent">Tourism Lab</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            The Mombasa Tourism Lab is where ancient Swahili wisdom meets modern innovation. 
-            We're building bridges between our rich cultural heritage and cutting-edge tourism solutions.
+        </div>
+
+        {/* Brief Description */}
+        <div className="max-w-3xl mx-auto mb-16 text-center">
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            The Mombasa Tourism Innovation Lab rejuvenates and diversifies Kenya's largest coastal destination through innovation, community engagement, and support for local tourism entrepreneurs.
           </p>
         </div>
 
