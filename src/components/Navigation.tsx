@@ -1,7 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { Menu, X, MapPin, Calendar, Users, Lightbulb, Mail } from 'lucide-react';
+import { Menu, X, MapPin, Calendar, Users, Lightbulb, Mail, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from '@/components/ui/navigation-menu';
+import { cn } from '@/lib/utils';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,8 +19,17 @@ const Navigation = () => {
     { name: 'About', href: '/about', icon: Users },
     { name: 'Destinations', href: '/destinations', icon: MapPin },
     { name: 'Events', href: '/events', icon: Calendar },
-    { name: 'Incubator', href: '/incubator', icon: Lightbulb },
+    // { name: 'Incubator', href: '/incubator', icon: Lightbulb },
     { name: 'Contact', href: '/contact', icon: Mail },
+  ];
+
+  const workItems = [
+    { name: 'Incubation', href: '/work/incubation' },
+    { name: 'Linkages', href: '/work/linkages' },
+    { name: 'Scouting', href: '/work/scouting' },
+    { name: 'Site Visits', href: '/work/site-visits' },
+    { name: 'Subgranting', href: '/work/subgranting' },
+    { name: 'Training & Mentorship', href: '/work/training-mentorship' },
   ];
 
   return (
@@ -32,6 +50,7 @@ const Navigation = () => {
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
+              {/* Regular menu items */}
               {menuItems.map((item) => (
                 <Link
                   key={item.name}
@@ -41,6 +60,35 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Our Work dropdown */}
+              <NavigationMenu className="relative">
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 hover:bg-primary/5 bg-transparent">
+                      Our Work
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="flex flex-col w-[200px] gap-2 p-4 max-h-[400px] overflow-y-auto">
+                        {workItems.map((item) => (
+                          <li key={item.name}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                to={item.href}
+                                className={cn(
+                                  "block select-none rounded-md py-3 px-4 no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground w-full text-left"
+                                )}
+                              >
+                                <div className="text-sm font-medium">{item.name}</div>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
             </div>
           </div>
 
@@ -76,6 +124,26 @@ const Navigation = () => {
                 </Link>
               );
             })}
+            
+            {/* Our Work section in mobile menu */}
+            <div className="pt-4 pb-1">
+              <div className="flex items-center px-3 py-2">
+                <Briefcase className="h-5 w-5 mr-3 text-primary" />
+                <span className="font-medium text-primary">Our Work</span>
+              </div>
+              <div className="mt-1 pl-11 border-l border-primary/10 ml-3">
+                {workItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="block text-sm text-foreground hover:text-primary py-2"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       )}
