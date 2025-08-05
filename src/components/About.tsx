@@ -1,3 +1,4 @@
+
 import { Users, Target, Heart, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -5,26 +6,21 @@ const About = () => {
   const values = [
     {
       icon: Target,
-      title: 'Innovation Hub',
-      description: 'Coordinating incubation and refinement of innovative tourism ideas while fostering development of niche products for sustainable growth.'
+      title: 'Driving Innovation and Inclusivity',
+      description: 'Central to the Lab\'s mission is the support of grassroots organizations and innovative business models that emphasize inclusivity and diversification. We focus on SME scalability and youth/women-led groups.'
     },
     {
       icon: Heart,
-      title: 'Inclusive Tourism',
-      description: 'Supporting grassroots organizations and youth/women-led groups that emphasize inclusivity and reflect Mombasa\'s rich cultural heritage.'
+      title: 'Cultural Heritage',
+      description: 'Fostering diversity and entrepreneurship while ensuring that the tourism sector reflects the rich cultural heritage and innovative spirit of Mombasa through rigorous selection processes.'
     },
     {
       icon: Globe,
-      title: 'Local Empowerment',
-      description: 'Partnering with organizations to provide training in product development and business acumen for the digital tourism market.'
+      title: 'Empowering Local Innovators',
+      description: 'In partnership with the Global Development Incubator and Swahilipot Foundation, we provide training programs in product development and business acumen for the digital tourism market.'
     }
   ];
 
-  const team = [
-    { name: 'Amina Hassan', role: 'Director & Cultural Heritage Expert', background: 'bg-primary' },
-    { name: 'Omar Kimathi', role: 'Innovation Lead & Tech Strategist', background: 'bg-secondary' },
-    { name: 'Fatuma Ali', role: 'Community Engagement Manager', background: 'bg-accent' },
-  ];
 
   return (
     <section id="about" className="py-20 bg-muted/30">
@@ -37,9 +33,12 @@ const About = () => {
         </div>
 
         {/* Brief Description */}
-        <div className="max-w-3xl mx-auto mb-16 text-center">
+        <div className="max-w-4xl mx-auto mb-16 text-center">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            The Mombasa Tourism Innovation Lab is an ambitious initiative designed to rejuvenate and diversify the tourism landscape of Mombasa, the largest coastal destination in Kenya. Recognizing the need for fresh and dynamic tourism products, this project aims to coordinate the incubation and refinement of innovative ideas within the sector.
+          </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            The Mombasa Tourism Innovation Lab rejuvenates and diversifies Kenya's largest coastal destination through innovation, community engagement, and support for local tourism entrepreneurs.
+            By engaging local businesses and fostering the development of niche tourism products, the Lab strives to create sustainable economic growth and employment opportunities, particularly for the youth. Through a meticulous selection process, the Lab identifies promising tourism enterprises and provides them with essential training in areas such as formalization, distribution, and niche product development.
           </p>
         </div>
 
@@ -61,25 +60,18 @@ const About = () => {
           })}
         </div>
 
-        {/* Story Section */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        {/* Impact Section */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-6">
-              Our Story
+              Our Impact
             </h3>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Born from the vibrant streets of Old Town Mombasa, our Tourism Lab emerged from a simple 
-                belief: that innovation and tradition can dance together like the dhows on the Indian Ocean.
+                Strategic grants and partnerships, such as those with Muranga University, provide rigorous training programs in product development and business acumen. This educational support is crucial for equipping local entrepreneurs with the skills needed to thrive in a digitally-connected global tourism market.
               </p>
               <p>
-                Founded in 2023, we began as a grassroots initiative to support local tourism entrepreneurs 
-                while preserving the authentic Swahili culture that makes Mombasa magical. Today, we're a 
-                thriving hub of creativity, sustainability, and cultural pride.
-              </p>
-              <p>
-                From startups developing eco-friendly tour solutions to community projects celebrating our 
-                maritime heritage, we're writing the next chapter of Mombasa's tourism story.
+                The Lab's initiatives, including familiarization trips for travel buyers and county officials, have successfully showcased the enhanced tourist experiences created by these innovators. This collaborative effort has not only boosted Mombasa's appeal as a premier destination but also set the stage for continued economic growth and cultural preservation.
               </p>
             </div>
           </div>
@@ -88,36 +80,20 @@ const About = () => {
             <div className="aspect-[4/3] bg-gradient-ocean rounded-2xl p-8 text-white">
               <div className="text-center">
                 <Users className="h-16 w-16 mx-auto mb-4 opacity-80" />
-                <h4 className="text-2xl font-bold mb-2">50+</h4>
-                <p className="text-white/90">Startups Supported</p>
+                <h4 className="text-2xl font-bold mb-2">6</h4>
+                <p className="text-white/90">Selected Enterprises</p>
               </div>
               <div className="grid grid-cols-2 gap-4 mt-8">
                 <div className="text-center">
-                  <div className="text-xl font-bold">200+</div>
-                  <div className="text-sm text-white/80">Community Members</div>
+                  <div className="text-xl font-bold">100+</div>
+                  <div className="text-sm text-white/80">Jobs Created</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl font-bold">15</div>
-                  <div className="text-sm text-white/80">Partner Organizations</div>
+                  <div className="text-xl font-bold">50+</div>
+                  <div className="text-sm text-white/80">Businesses Supported</div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Team */}
-        <div className="text-center">
-          <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-12">Meet Our Team</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div key={index} className="group">
-                <div className={`aspect-square ${member.background} rounded-full mb-4 mx-auto w-32 h-32 flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
-                  <Users className="h-16 w-16 text-white" />
-                </div>
-                <h4 className="text-lg font-semibold text-foreground">{member.name}</h4>
-                <p className="text-muted-foreground">{member.role}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>
