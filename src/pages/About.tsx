@@ -1,4 +1,6 @@
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import Partners from '@/components/Partners';
 import { Users, Target, Heart, Globe, ArrowRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -80,87 +82,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Partners - Animated Logos */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-foreground mb-12">Our Partners</h2>
-          {/* Animated Logos */}
-          <div className="space-y-8">
-            {/* Top Row - scroll left */}
-            <div className="overflow-hidden">
-              <div className="flex gap-12 animate-marquee-left items-center">
-                <img src="/partners/kenya-tourism-board.png" alt="Kenya Tourism Board" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/mombasa-county-logo.png" alt="Mombasa County" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/STTA-logo.png" alt="STTA" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/swahilipothub.png" alt="Swahilipot Foundation" className="h-20 object-contain" draggable="false" />
-                {/* Repeat for smooth loop */}
-                <img src="/partners/kenya-tourism-board.png" alt="Kenya Tourism Board" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/mombasa-county-logo.png" alt="Mombasa County" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/STTA-logo.png" alt="STTA" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/swahilipothub.png" alt="Swahilipot Foundation" className="h-20 object-contain" draggable="false" />
-              </div>
-            </div>
-            {/* Bottom Row - scroll right */}
-            <div className="overflow-hidden">
-              <div className="flex gap-12 animate-marquee-right items-center">
-                <img src="/partners/STTA-logo.png" alt="STTA" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/mombasa-county-logo.png" alt="Mombasa County" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/kenya-tourism-board.png" alt="Kenya Tourism Board" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/swahilipothub.png" alt="Swahilipot Foundation" className="h-20 object-contain" draggable="false" />
-                {/* Repeat for smooth loop */}
-                <img src="/partners/STTA-logo.png" alt="STTA" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/mombasa-county-logo.png" alt="Mombasa County" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/kenya-tourism-board.png" alt="Kenya Tourism Board" className="h-20 object-contain" draggable="false" />
-                <img src="/partners/swahilipothub.png" alt="Swahilipot Foundation" className="h-20 object-contain" draggable="false" />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Marquee Animations */}
-        <style>{`
-          @keyframes marquee-left {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          @keyframes marquee-right {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(50%); }
-          }
-          .animate-marquee-left {
-            animation: marquee-left 18s linear infinite;
-            width: max-content;
-          }
-          .animate-marquee-right {
-            animation: marquee-right 18s linear infinite;
-            width: max-content;
-          }
-        `}</style>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 bg-gradient-ocean text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold mb-6">Join Our Innovation Journey</h2>
-          <p className="text-xl text-white/90 mb-8">
-            Be part of Mombasa's tourism transformation. Connect with us to explore partnership opportunities.
-          </p>
-          <Link to="/contact">
-            <Button variant="secondary" size="lg" className="group">
-              Get Involved
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-primary-foreground/80">
-            © 2024 Mombasa Tourism Lab. Celebrating coastal heritage, fostering innovation.
-          </p>
-        </div>
-      </footer>
+      <Partners />
+      <Footer />
     </div>
   );
 };
