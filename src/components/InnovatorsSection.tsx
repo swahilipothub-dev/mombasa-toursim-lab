@@ -1,7 +1,11 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Camera, Utensils, Waves, Palette, Globe, TreePine } from 'lucide-react';
+import mombasaCultural1 from '@/assets/innovators/mombasa-cultural1.jpg';
+import sitevisit1 from '@/assets/scoutingSitevisits/sitevisit1.jpg';
+import umojaWaPwani1 from '@/assets/innovators/umoja-wa-pwani1.jpg';
 
 const InnovatorsSection = () => {
   const innovators = [
@@ -34,7 +38,7 @@ const InnovatorsSection = () => {
       name: 'Mombasa Cultural Village',
       description: 'Vibrant showcase of Kenya\'s diverse tribal heritage representing 11 tribes through traditional dances, artifacts, beadwork, and reconstructed tribal houses.',
       icon: Globe,
-      image: '/innovators/mombasa-cultural1.jpg',
+      image: mombasaCultural1,
       slug: 'mombasa-cultural-village',
       highlight: 'Cultural preservation & education'
     },
@@ -43,6 +47,7 @@ const InnovatorsSection = () => {
       name: 'Studio Bella Bella',
       description: 'Creative oasis in Bamburi offering artistic services including art classes, pottery, and photography under the innovative project \'Sanaa Kivulini.\'',
       icon: Palette,
+      image: sitevisit1,
       slug: 'studio-bella-bella',
       highlight: 'Community art hub'
     },
@@ -51,7 +56,7 @@ const InnovatorsSection = () => {
       name: 'Umoja wa Pwani',
       description: 'Explore the rich cultural tapestry of the Swahili people with traditional houses, artifacts, cultural demonstrations, and unique noodle-making experiences.',
       icon: TreePine,
-      image: '/innovators/umoja-wa-pwani1.jpg',
+      image: umojaWaPwani1,
       slug: 'umoja-wa-pwani',
       highlight: 'Swahili cultural immersion'
     }

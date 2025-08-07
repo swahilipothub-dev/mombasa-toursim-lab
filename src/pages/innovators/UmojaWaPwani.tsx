@@ -1,3 +1,6 @@
+import umojaWaPwani1 from '@/assets/innovators/umoja-wa-pwani1.jpg';
+import umojaWaPwani2 from '@/assets/innovators/umoja-wa-pwani2.jpg';
+import umojaWaPwani3 from '@/assets/innovators/umoja-wa-pwani3.jpg';
 import Navigation from "@/components/Navigation";
 import InnovatorHero from "@/components/InnovatorHero";
 import AnimatedBackground from "@/components/AnimatedBackground";
@@ -13,7 +16,7 @@ const UmojaWaPwani = () => {
       <InnovatorHero
         title="Umoja wa Pwani"
         subtitle="Uniting coastal communities through sustainable tourism"
-        backgroundImage="/innovators/umoja-wa-pwani1.jpg"
+        backgroundImage={umojaWaPwani1}
       />
 
       <div className="relative z-10">
@@ -62,7 +65,7 @@ const UmojaWaPwani = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img
-                    src="/innovators/umoja-wa-pwani1.jpg"
+                    src={umojaWaPwani1}
                     alt="Traditional Swahili food preparation and culinary demonstrations"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -78,7 +81,7 @@ const UmojaWaPwani = () => {
 
                 <div className="group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img
-                    src="/innovators/umoja-wa-pwani2.jpg"
+                    src={umojaWaPwani2}
                     alt="Traditional textile weaving and cultural crafts demonstration"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -94,7 +97,7 @@ const UmojaWaPwani = () => {
 
                 <div className="group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1">
                   <img
-                    src="/innovators/umoja-wa-pwani3.jpg"
+                    src={umojaWaPwani3}
                     alt="Umoja wa Pwani community team and cultural ambassadors"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />

@@ -1,3 +1,6 @@
+import mombasaCultural1 from '@/assets/innovators/mombasa-cultural1.jpg';
+import mombasaCultural2 from '@/assets/innovators/mombasa-cultural2.jpg';
+import mombasaCultural3 from '@/assets/innovators/Mombasa-cultural3.png';
 import Navigation from "@/components/Navigation";
 import InnovatorHero from "@/components/InnovatorHero";
 import AnimatedBackground from "@/components/AnimatedBackground";
@@ -13,7 +16,7 @@ const MombasaCulturalVillage = () => {
       <InnovatorHero
         title="Mombasa Cultural Village"
         subtitle="Preserving and celebrating Mombasa's rich cultural heritage"
-        backgroundImage="/innovators/mombasa-cultural1.jpg"
+        backgroundImage={mombasaCultural1}
       />
 
       <div className="relative z-10">
@@ -61,7 +64,7 @@ const MombasaCulturalVillage = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img
-                    src="/innovators/mombasa-cultural1.jpg"
+                    src={mombasaCultural1}
                     alt="Traditional tribal huts and cultural artifacts at Mombasa Cultural Village"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -77,7 +80,7 @@ const MombasaCulturalVillage = () => {
 
                 <div className="group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
                   <img
-                    src="/innovators/mombasa-cultural2.jpg"
+                    src={mombasaCultural2}
                     alt="Women in traditional cultural dress with beadwork and jewelry"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
@@ -93,7 +96,7 @@ const MombasaCulturalVillage = () => {
 
                 <div className="group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 md:col-span-2 lg:col-span-1">
                   <img
-                    src="/innovators/Mombasa-cultural3.png"
+                    src={mombasaCultural3}
                     alt="Traditional grain winnowing demonstration using woven baskets"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />

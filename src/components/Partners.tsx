@@ -1,20 +1,27 @@
+
+import sttaLogo from '@/assets/partners/STTA-logo.png';
+import ktbLogo from '@/assets/partners/kenya-tourism-board.png';
+import swahilipothubLogo from '@/assets/partners/swahilipothub.png';
+import mombasaCountyLogo from '@/assets/partners/mombasa-county-logo.png';
+
 const Partners = () => {
+
   const partners = [
     {
       name: "Sustainable Travel and Tourism Africa - STTA",
-      logo: "/partners/STTA-logo.png",
+      logo: sttaLogo,
     },
     {
       name: "Kenya Tourism Board - KTB", 
-      logo: "/partners/kenya-tourism-board.png",
+      logo: ktbLogo,
     },
     {
       name: "Swahilipothub Foundation",
-      logo: "/partners/swahilipothub.png",
+      logo: swahilipothubLogo,
     },
     {
       name: "County Government of Mombasa",
-      logo: "/partners/mombasa-county-logo.png",
+      logo: mombasaCountyLogo,
     },
   ];
 

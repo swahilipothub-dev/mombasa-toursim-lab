@@ -38,11 +38,11 @@ const Navigation = () => {
   ];
 
   const ourWorkItems = [
-    { name: "Incubation", href: "/incubation" },
-    { name: "Linkages", href: "/linkages" },
-    { name: "Scouting Site Visits", href: "/scouting-site-visits" },
-    { name: "Subgranting", href: "/subgranting" },
-    { name: "Training & Mentorship", href: "/training-mentorship" },
+    { name: "Incubation", href: "/ourwork/incubation" },
+    { name: "Linkages", href: "/ourwork/linkages" },
+    { name: "Scouting Site Visits", href: "/ourwork/scouting-site-visits" },
+    { name: "Subgranting", href: "/ourwork/subgranting" },
+    { name: "Training & Mentorship", href: "/ourwork/training-mentorship" },
   ];
 
   const scrollToSection = (href: string) => {
