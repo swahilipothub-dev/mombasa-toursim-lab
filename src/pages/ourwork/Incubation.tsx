@@ -1,3 +1,5 @@
+import incubation1 from '@/assets/our-work/incubation1.jpg';
+import incubation2 from '@/assets/our-work/incubation2.jpg';
 import Navigation from '@/components/Navigation';
 import InnovatorHero from '@/components/InnovatorHero';
 import AnimatedBackground from '@/components/AnimatedBackground';
@@ -13,7 +15,7 @@ const Incubation = () => {
       <InnovatorHero
         title="Incubation"
         subtitle="Nurturing tourism innovation through comprehensive business development"
-        backgroundImage="/our-work/incubation1.jpg"
+        backgroundImage={incubation1}
       />
       
       <div className="relative z-10">
@@ -30,7 +32,7 @@ const Incubation = () => {
             </div>
             <div className="relative">
               <img 
-                src="/our-work/incubation2.jpg" 
+                src={incubation2} 
                 alt="Business incubation and startup development"
                 className="rounded-lg shadow-xl"
               />

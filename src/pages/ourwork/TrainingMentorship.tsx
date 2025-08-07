@@ -1,3 +1,5 @@
+import training1 from '@/assets/training/training1.jpg';
+import training2 from '@/assets/training/training2.jpg';
 import Navigation from '@/components/Navigation';
 import InnovatorHero from '@/components/InnovatorHero';
 import AnimatedBackground from '@/components/AnimatedBackground';
@@ -13,7 +15,7 @@ const TrainingMentorship = () => {
       <InnovatorHero
         title="Training & Mentorship"
         subtitle="Empowering entrepreneurs through comprehensive skill development and guidance"
-        backgroundImage="/training/training1.jpg"
+        backgroundImage={training1}
       />
       
       <div className="relative z-10">
@@ -21,7 +23,7 @@ const TrainingMentorship = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative">
               <img 
-                src="/training/training2.jpg" 
+                src={training2} 
                 alt="Professional training and mentorship session"
                 className="rounded-lg shadow-xl"
               />

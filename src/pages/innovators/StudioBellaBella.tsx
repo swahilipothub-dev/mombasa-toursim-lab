@@ -1,3 +1,4 @@
+import sitevisit1 from '@/assets/scoutingSitevisits/sitevisit1.jpg';
 import Navigation from "@/components/Navigation";
 import InnovatorHero from "@/components/InnovatorHero";
 import AnimatedBackground from "@/components/AnimatedBackground";
@@ -13,7 +14,7 @@ const StudioBellaBella = () => {
       <InnovatorHero
         title="Studio Bella Bella"
         subtitle="Creative innovation in Mombasa's tourism landscape"
-        backgroundImage="/scoutingSitevisits/sitevisit1.jpg"
+        backgroundImage={sitevisit1}
       />
 
       <div className="relative z-10">

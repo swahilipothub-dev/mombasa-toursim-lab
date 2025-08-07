@@ -1,8 +1,11 @@
+
 import Navigation from '@/components/Navigation';
 import InnovatorHero from '@/components/InnovatorHero';
 import AnimatedBackground from '@/components/AnimatedBackground';
 import Partners from '@/components/Partners';
 import Footer from '@/components/Footer';
+import linkages1 from '@/assets/linkages/linkages1.jpg';
+import linkages3 from '@/assets/linkages/linkages3.jpg';
 
 const Linkages = () => {
   return (
@@ -13,7 +16,7 @@ const Linkages = () => {
       <InnovatorHero
         title="Strategic Linkages"
         subtitle="Building powerful partnerships for sustainable tourism development"
-        backgroundImage="/linkages/linkages1.jpg"
+        backgroundImage={linkages1}
       />
       
       <div className="relative z-10">
@@ -30,7 +33,7 @@ const Linkages = () => {
             </div>
             <div className="relative">
               <img 
-                src="/linkages/linkages3.jpg" 
+                src={linkages3} 
                 alt="Strategic partnerships and business networking"
                 className="rounded-lg shadow-xl"
               />

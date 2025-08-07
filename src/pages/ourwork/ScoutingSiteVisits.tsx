@@ -1,3 +1,6 @@
+import scouting1 from '@/assets/scoutingSitevisits/scouting1.jpg';
+import scouting2 from '@/assets/scoutingSitevisits/scouting2.jpg';
+import sitevisit1 from '@/assets/scoutingSitevisits/sitevisit1.jpg';
 import Navigation from '@/components/Navigation';
 import InnovatorHero from '@/components/InnovatorHero';
 import AnimatedBackground from '@/components/AnimatedBackground';
@@ -13,7 +16,7 @@ const ScoutingSiteVisits = () => {
       <InnovatorHero
         title="Scouting & Site Visits"
         subtitle="Discovering and evaluating tourism innovation opportunities across Mombasa"
-        backgroundImage="/scoutingSitevisits/scouting1.jpg"
+        backgroundImage={scouting1}
       />
       
       <div className="relative z-10">
@@ -31,7 +34,7 @@ const ScoutingSiteVisits = () => {
               </div>
               
               <img 
-                src="/scoutingSitevisits/scouting2.jpg" 
+                src={scouting2} 
                 alt="Business scouting and discovery process"
                 className="rounded-lg shadow-lg mb-6"
               />
@@ -84,7 +87,7 @@ const ScoutingSiteVisits = () => {
               </div>
               
               <img 
-                src="/scoutingSitevisits/sitevisit1.jpg" 
+                src={sitevisit1} 
                 alt="On-site business evaluation and assessment"
                 className="rounded-lg shadow-lg mb-6"
               />
