@@ -13,7 +13,7 @@ const StudioBellaBella = () => {
       <InnovatorHero
         title="Studio Bella Bella"
         subtitle="Creative innovation in Mombasa's tourism landscape"
-        backgroundImage="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=1920&h=1080&fit=crop&crop=center"
+        backgroundImage="/scoutingSitevisits/sitevisit1.jpg"
       />
 
       <div className="relative z-10">

@@ -43,6 +43,7 @@ const InnovatorsSection = () => {
       name: 'Studio Bella Bella',
       description: 'Creative oasis in Bamburi offering artistic services including art classes, pottery, and photography under the innovative project \'Sanaa Kivulini.\'',
       icon: Palette,
+      image: '/scoutingSitevisits/sitevisit1.jpg',
       slug: 'studio-bella-bella',
       highlight: 'Community art hub'
     },
