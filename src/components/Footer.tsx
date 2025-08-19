@@ -16,10 +16,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8">
           {/* Logo and Description */}
           <div className="md:col-span-5 flex flex-col justify-between">
-            <div>
-              <h3 className="text-3xl font-extrabold text-white mb-3 tracking-tight">
-                Mombasa Tourism Innovation Lab
-              </h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/mtl-logo-no-bg.png" 
+                alt="Mombasa Tourism Innovation Lab Logo" 
+                className="h-24 w-auto"
+              />
               <p className="text-blue-100 mb-7 max-w-md text-base">
                 Rejuvenating and diversifying Kenya's largest coastal tourism
                 destination through innovation and community engagement.
@@ -110,7 +112,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center text-blue-100">
                 <Phone size={18} className="mr-3 text-primary" />
-                <span className="text-base">+254 700 000 000</span>
+                <span className="text-base">+254 729 005 789</span>
               </li>
               <li className="flex items-center text-blue-100">
                 <Mail size={18} className="mr-3 text-primary" />

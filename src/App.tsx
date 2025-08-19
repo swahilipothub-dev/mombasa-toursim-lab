@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Impacts from "./pages/Impacts";
+import Content from "./pages/Content";
+import Resources from "./pages/Resources";
 import AfricanFoodTrail from "./pages/innovators/AfricanFoodTrail";
 import BigShip from "./pages/innovators/BigShip";
 import KLenses from "./pages/innovators/KLenses";
@@ -37,6 +39,9 @@ const App = () => (
           <Route path="/innovators/mombasa-cultural-village" element={<MombasaCulturalVillage />} />
           <Route path="/innovators/studio-bella-bella" element={<StudioBellaBella />} />
           <Route path="/innovators/umoja-wa-pwani" element={<UmojaWaPwani />} />
+          <Route path="/impacts" element={<Impacts />} />
+          <Route path="/content" element={<Content />} />
+          <Route path="/resources" element={<Resources />} />
           <Route path="/ourwork/incubation" element={<Incubation />} />
           <Route path="/ourwork/linkages" element={<Linkages />} />
           <Route path="/ourwork/scouting-site-visits" element={<SiteVisits />} />
