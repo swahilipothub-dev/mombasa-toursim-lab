@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import bookPreview from '@/assets/book-preview.png';
 import Footer from '@/components/Footer';
 import EbookDownload from '@/components/EbookDownload';
 import { BookOpen, Download, Users, TrendingUp, Lightbulb, Target } from 'lucide-react';
@@ -152,7 +153,7 @@ const Resources = () => {
             {/* Ebook Cover Preview */}
             <div className="max-w-sm">
               <img 
-                src="src/assets/book-preview.png" 
+                src={bookPreview} 
                 alt="Compendium of Possible Tourism Businesses for Young People - eBook Cover" 
                 className="w-full h-auto object-contain rounded-lg shadow-lg border border-border"
               />
