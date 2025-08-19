@@ -17,7 +17,7 @@ const OurWorkSection = () => {
       description:
         "Actively seeking out new and existing businesses within Mombasa that show potential for innovation and growth in the tourism industry, with emphasis on grassroots ideas and inclusive business models.",
       icon: Search,
-      slug: "scouting-site-visits",
+      slug: "ourwork/scouting-site-visits",
       step: "01",
     },
     {
@@ -26,7 +26,7 @@ const OurWorkSection = () => {
       description:
         "Conducting thorough site visits to gain deeper understanding of each business's operations, assessing practicality and impact of proposed tourism innovations in real-world settings.",
       icon: MapPin,
-      slug: "scouting-site-visits",
+      slug: "ourwork/scouting-site-visits",
       step: "02",
     },
     {
@@ -35,7 +35,7 @@ const OurWorkSection = () => {
       description:
         "Partnering with institutions like Muranga University to offer rigorous training programs covering product development, business acumen, digitization, and strategic marketing.",
       icon: GraduationCap,
-      slug: "training-mentorship",
+      slug: "ourwork/training-mentorship",
       step: "03",
     },
     {
@@ -44,7 +44,7 @@ const OurWorkSection = () => {
       description:
         "Intensive incubation program providing comprehensive training on strategic areas essential for scaling, such as formalizing operations and developing niche tourism offerings.",
       icon: Rocket,
-      slug: "incubation",
+      slug: "ourwork/incubation",
       step: "04",
     },
     {
@@ -53,7 +53,7 @@ const OurWorkSection = () => {
       description:
         "Creating strategic linkages and partnerships with key stakeholders, facilitating opportunities for local businesses to connect with travel buyers and county officials.",
       icon: LinkIcon,
-      slug: "linkages",
+      slug: "ourwork/linkages",
       step: "05",
     },
   ];
