@@ -22,6 +22,8 @@ const Navigation = () => {
 
   const menuItems = [
     { name: "About", href: "/about", type: "route" },
+    { name: 'Content', href: '/content', type: 'route' },
+    { name: 'Resources', href: '/resources', type: 'route' },
     { name: "Impacts", href: "/impacts", type: "route", icon: TrendingUp },
   ];
 
@@ -68,11 +70,12 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link
-                to="/"
-                className="text-xl font-bold bg-gradient-ocean bg-clip-text text-transparent"
-              >
-                Mombasa Tourism Lab
+             <Link to="/" className="flex items-center space-x-3">
+                <img 
+                  src="/mtl-logo-no-bg.png" 
+                  alt="Mombasa Tourism Innovation Lab Logo" 
+                  className="h-24 w-auto"
+                />
               </Link>
             </div>
           </div>
