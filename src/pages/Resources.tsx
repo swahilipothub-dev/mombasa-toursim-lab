@@ -8,7 +8,7 @@ const Resources = () => {
   const ebookFeatures = [
     {
       icon: Lightbulb,
-      title: "50+ Business Ideas",
+      title: "20 Business Ideas",
       description: "Comprehensive list of tourism business opportunities in Mombasa"
     },
     {
@@ -79,7 +79,7 @@ const Resources = () => {
               </div>
             </div>
             
-            <div className="flex justify-center pt-12 lg:justify-end">
+            <div className="flex justify-center lg:justify-end">
               <EbookDownload className="w-full max-w-md" />
             </div>
           </div>
@@ -147,33 +147,21 @@ const Resources = () => {
       {/* Chapter Preview Section */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Chapter Overview</h2>
-            <p className="text-muted-foreground">
-              A sneak peek into what you'll discover in our comprehensive guide.
-            </p>
-          </div>
           
-          <div className="space-y-4">
-            {[
-              "Chapter 1: Understanding Mombasa's Tourism Landscape",
-              "Chapter 2: Identifying Your Niche Market",
-              "Chapter 3: 50+ Proven Business Ideas",
-              "Chapter 4: Building Your Business Plan", 
-              "Chapter 5: Funding and Investment Strategies",
-              "Chapter 6: Marketing Your Tourism Business",
-              "Chapter 7: Scaling and Growth Tactics",
-              "Chapter 8: Legal and Regulatory Requirements",
-              "Chapter 9: Success Stories and Case Studies",
-              "Chapter 10: Resources and Next Steps"
-            ].map((chapter, index) => (
-              <div key={index} className="flex items-center gap-4 p-4 bg-background border border-border rounded-lg">
-                <div className="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                  {index + 1}
-                </div>
-                <span className="text-foreground">{chapter}</span>
+          <div className="flex justify-center">
+            {/* Ebook Cover Preview */}
+            <div className="max-w-sm">
+              <img 
+                src="src/assets/book-preview.png" 
+                alt="Compendium of Possible Tourism Businesses for Young People - eBook Cover" 
+                className="w-full h-auto object-contain rounded-lg shadow-lg border border-border"
+              />
+              <div className="mt-6 text-center">
+                <p className="text-muted-foreground">
+                  Comprehensive guide covering 20+ tourism business ideas with detailed strategies, market analysis, and implementation steps.
+                </p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
