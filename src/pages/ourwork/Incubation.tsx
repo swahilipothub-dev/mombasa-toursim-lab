@@ -35,6 +35,7 @@ const Incubation = () => {
                 src={incubation2} 
                 alt="Business incubation and startup development"
                 className="rounded-lg shadow-xl"
+                loading="lazy"
               />
             </div>
           </div>

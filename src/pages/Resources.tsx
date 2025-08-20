@@ -156,6 +156,7 @@ const Resources = () => {
                 src={bookPreview} 
                 alt="Compendium of Possible Tourism Businesses for Young People - eBook Cover" 
                 className="w-full h-auto object-contain rounded-lg shadow-lg border border-border"
+                loading="lazy"
               />
               <div className="mt-6 text-center">
                 <p className="text-muted-foreground">

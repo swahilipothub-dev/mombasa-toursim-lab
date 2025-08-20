@@ -67,6 +67,7 @@ const MombasaCulturalVillage = () => {
                     src={mombasaCultural1}
                     alt="Traditional tribal huts and cultural artifacts at Mombasa Cultural Village"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading='lazy'
                   />
                   <div className="p-4 bg-white">
                     <h3 className="font-semibold text-foreground">
@@ -83,6 +84,7 @@ const MombasaCulturalVillage = () => {
                     src={mombasaCultural2}
                     alt="Women in traditional cultural dress with beadwork and jewelry"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                   <div className="p-4 bg-white">
                     <h3 className="font-semibold text-foreground">
@@ -99,6 +101,7 @@ const MombasaCulturalVillage = () => {
                     src={mombasaCultural3}
                     alt="Traditional grain winnowing demonstration using woven baskets"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                   <div className="p-4 bg-white">
                     <h3 className="font-semibold text-foreground">

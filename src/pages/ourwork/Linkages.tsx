@@ -36,6 +36,7 @@ const Linkages = () => {
                 src={linkages3} 
                 alt="Strategic partnerships and business networking"
                 className="rounded-lg shadow-xl"
+                loading="lazy"
               />
             </div>
           </div>

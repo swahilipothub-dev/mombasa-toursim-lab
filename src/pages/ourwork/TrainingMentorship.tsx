@@ -26,6 +26,7 @@ const TrainingMentorship = () => {
                 src={training2} 
                 alt="Professional training and mentorship session"
                 className="rounded-lg shadow-xl"
+                loading="lazy"
               />
             </div>
             <div>

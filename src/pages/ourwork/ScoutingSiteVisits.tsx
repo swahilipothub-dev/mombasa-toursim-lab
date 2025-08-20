@@ -37,6 +37,7 @@ const ScoutingSiteVisits = () => {
                 src={scouting2} 
                 alt="Business scouting and discovery process"
                 className="rounded-lg shadow-lg mb-6"
+                loading="lazy"
               />
               
               <p className="text-muted-foreground text-lg leading-relaxed mb-6">
