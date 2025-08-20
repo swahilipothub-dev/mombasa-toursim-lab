@@ -68,6 +68,7 @@ const UmojaWaPwani = () => {
                     src={umojaWaPwani1}
                     alt="Traditional Swahili food preparation and culinary demonstrations"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                   <div className="p-4 bg-white">
                     <h3 className="font-semibold text-foreground">
@@ -84,6 +85,7 @@ const UmojaWaPwani = () => {
                     src={umojaWaPwani2}
                     alt="Traditional textile weaving and cultural crafts demonstration"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                   <div className="p-4 bg-white">
                     <h3 className="font-semibold text-foreground">
@@ -100,6 +102,7 @@ const UmojaWaPwani = () => {
                     src={umojaWaPwani3}
                     alt="Umoja wa Pwani community team and cultural ambassadors"
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                   <div className="p-4 bg-white">
                     <h3 className="font-semibold text-foreground">
