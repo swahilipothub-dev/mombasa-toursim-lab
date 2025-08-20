@@ -1,27 +1,31 @@
 
-import sttaLogo from '@/assets/partners/STTA-logo.png';
-import ktbLogo from '@/assets/partners/kenya-tourism-board.png';
-import swahilipothubLogo from '@/assets/partners/swahilipothub.png';
-import mombasaCountyLogo from '@/assets/partners/mombasa-county-logo.png';
+import sttaLogoWebP from '@/assets/partners/STTA-logo.webp';
+import sttaLogoPNG from '@/assets/partners/STTA-logo.png';
+import ktbLogoWebP from '@/assets/partners/kenya-tourism-board.webp';
+import ktbLogoPNG from '@/assets/partners/kenya-tourism-board.png';
+import swahilipothubLogoWebP from '@/assets/partners/swahilipothub.webp';
+import swahilipothubLogoPNG from '@/assets/partners/swahilipothub.png';
+import mombasaCountyLogoWebP from '@/assets/partners/mombasa-county-logo.webp';
+import mombasaCountyLogoPNG from '@/assets/partners/mombasa-county-logo.png';
 
 const Partners = () => {
 
   const partners = [
     {
       name: "Sustainable Travel and Tourism Africa - STTA",
-      logo: sttaLogo,
+      logo: { webp: sttaLogoWebP, png: sttaLogoPNG },
     },
     {
       name: "Kenya Tourism Board - KTB", 
-      logo: ktbLogo,
+      logo: { webp: ktbLogoWebP, png: ktbLogoPNG },
     },
     {
       name: "Swahilipothub Foundation",
-      logo: swahilipothubLogo,
+      logo: { webp: swahilipothubLogoWebP, png: swahilipothubLogoPNG },
     },
     {
       name: "County Government of Mombasa",
-      logo: mombasaCountyLogo,
+      logo: { webp: mombasaCountyLogoWebP, png: mombasaCountyLogoPNG },
     },
   ];
 
@@ -43,9 +47,11 @@ const Partners = () => {
                 className="flex items-center justify-center flex-shrink-0"
               >
                 <img
-                  src={partner.logo}
+                  src={partner.logo.webp}
+                  srcSet={`${partner.logo.webp} 1x, ${partner.logo.png} 2x`}
                   alt={partner.name}
                   className="max-h-16 w-auto transition-all duration-300"
+                  loading="lazy"
                 />
               </div>
             ))}

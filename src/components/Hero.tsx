@@ -1,6 +1,7 @@
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/mombasa-hero.jpg';
+import heroImageWebP from '@/assets/mombasa-hero.webp';
+import heroImageJPG from '@/assets/mombasa-hero.jpg';
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -15,9 +16,11 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
-          src={heroImage} 
-          alt="Mombasa Coast" 
+          src={heroImageWebP}
+          srcSet={`${heroImageWebP} 1x, ${heroImageJPG} 2x`}
+          alt="Mombasa Coast"
           className="w-full h-full object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-hero"></div>
       </div>

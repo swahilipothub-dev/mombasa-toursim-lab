@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
-import bookPreview from '@/assets/book-preview.png';
+import bookPreviewWebP from '@/assets/book-preview.webp';
+import bookPreviewPNG from '@/assets/book-preview.png';
 import Footer from '@/components/Footer';
 import EbookDownload from '@/components/EbookDownload';
 import { BookOpen, Download, Users, TrendingUp, Lightbulb, Target } from 'lucide-react';
@@ -152,12 +153,13 @@ const Resources = () => {
           <div className="flex justify-center">
             {/* Ebook Cover Preview */}
             <div className="max-w-sm">
-              <img 
-                src={bookPreview} 
-                alt="Compendium of Possible Tourism Businesses for Young People - eBook Cover" 
-                className="w-full h-auto object-contain rounded-lg shadow-lg border border-border"
-                loading="lazy"
-              />
+                        <img
+                          src={bookPreviewWebP}
+                          srcSet={`${bookPreviewWebP} 1x, ${bookPreviewPNG} 2x`}
+                          alt="Compendium of Possible Tourism Businesses for Young People - eBook Cover"
+                          className="w-full h-auto object-contain rounded-lg shadow-lg border border-border"
+                          loading="lazy"
+                        />
               <div className="mt-6 text-center">
                 <p className="text-muted-foreground">
                   Comprehensive guide covering 20+ tourism business ideas with detailed strategies, market analysis, and implementation steps.

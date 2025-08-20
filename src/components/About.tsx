@@ -1,3 +1,4 @@
+import mombasaCultural1WebP from "../assets/innovators/mombasa-cultural1.webp";
 
 import { Users, Target, Heart, Globe } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
@@ -77,23 +78,14 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <div className="aspect-[4/3] bg-gradient-ocean rounded-2xl p-8 text-white">
-              <div className="text-center">
-                <Users className="h-16 w-16 mx-auto mb-4 opacity-80" />
-                <h4 className="text-2xl font-bold mb-2">6</h4>
-                <p className="text-white/90">Selected Enterprises</p>
-              </div>
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <div className="text-center">
-                  <div className="text-xl font-bold">100+</div>
-                  <div className="text-sm text-white/80">Jobs Created</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl font-bold">50+</div>
-                  <div className="text-sm text-white/80">Businesses Supported</div>
-                </div>
-              </div>
-            </div>
+            <img
+              src={mombasaCultural1WebP}
+              srcSet="/src/assets/innovators/mombasa-cultural1.webp 1x, /src/assets/innovators/mombasa-cultural1.jpg 2x"
+              sizes="(max-width: 600px) 400px, 800px"
+              alt="Mombasa Cultural Event"
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300 rounded-2xl"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>

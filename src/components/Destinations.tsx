@@ -1,16 +1,19 @@
 import { MapPin, Clock, Star, Camera } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import fortJesusImage from '@/assets/fort-jesus.jpg';
-import oldTownImage from '@/assets/old-town.jpg';
-import dianiBeachImage from '@/assets/diani-beach.jpg';
+import fortJesusWebP from '@/assets/fort-jesus.webp';
+import fortJesusJPG from '@/assets/fort-jesus.jpg';
+import oldTownWebP from '@/assets/old-town.webp';
+import oldTownJPG from '@/assets/old-town.jpg';
+import dianiBeachWebP from '@/assets/diani-beach.webp';
+import dianiBeachJPG from '@/assets/diani-beach.jpg';
 
 const Destinations = () => {
   const destinations = [
     {
       id: 1,
       name: 'Fort Jesus',
-      image: fortJesusImage,
+  image: { webp: fortJesusWebP, jpg: fortJesusJPG },
       description: 'A UNESCO World Heritage site, this 16th-century Portuguese fortress offers breathtaking views and rich history.',
       location: 'Mombasa Island',
       duration: '2-3 hours',
@@ -20,7 +23,7 @@ const Destinations = () => {
     {
       id: 2,
       name: 'Old Town Mombasa',
-      image: oldTownImage,
+  image: { webp: oldTownWebP, jpg: oldTownJPG },
       description: 'Wander through narrow streets lined with Swahili architecture, bustling markets, and authentic local cuisine.',
       location: 'Mombasa Island',
       duration: 'Half day',
@@ -30,7 +33,7 @@ const Destinations = () => {
     {
       id: 3,
       name: 'Diani Beach',
-      image: dianiBeachImage,
+  image: { webp: dianiBeachWebP, jpg: dianiBeachJPG },
       description: 'Pristine white sands and crystal-clear turquoise waters make this one of the world\'s most beautiful beaches.',
       location: 'South Coast',
       duration: 'Full day',
@@ -60,9 +63,11 @@ const Destinations = () => {
               {/* Image */}
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img 
-                  src={destination.image} 
+                  src={destination.image.webp}
+                  srcSet={`${destination.image.webp} 1x, ${destination.image.jpg} 2x`}
                   alt={destination.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 

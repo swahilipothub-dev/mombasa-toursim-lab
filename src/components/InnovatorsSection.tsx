@@ -3,9 +3,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Camera, Utensils, Waves, Palette, Globe, TreePine } from 'lucide-react';
-import mombasaCultural1 from '@/assets/innovators/mombasa-cultural1.jpg';
-import sitevisit1 from '@/assets/scoutingSitevisits/sitevisit1.jpg';
-import umojaWaPwani1 from '@/assets/innovators/umoja-wa-pwani1.jpg';
+import mombasaCultural1WebP from '@/assets/innovators/mombasa-cultural1.webp';
+import mombasaCultural1JPG from '@/assets/innovators/mombasa-cultural1.jpg';
+import sitevisit1WebP from '@/assets/scoutingSitevisits/sitevisit1.webp';
+import sitevisit1JPG from '@/assets/scoutingSitevisits/sitevisit1.jpg';
+import umojaWaPwani1WebP from '@/assets/innovators/umoja-wa-pwani1.webp';
+import umojaWaPwani1JPG from '@/assets/innovators/umoja-wa-pwani1.jpg';
 
 const InnovatorsSection = () => {
   const innovators = [
@@ -38,7 +41,7 @@ const InnovatorsSection = () => {
       name: 'Mombasa Cultural Village',
       description: 'Vibrant showcase of Kenya\'s diverse tribal heritage representing 11 tribes through traditional dances, artifacts, beadwork, and reconstructed tribal houses.',
       icon: Globe,
-      image: mombasaCultural1,
+  image: { webp: mombasaCultural1WebP, jpg: mombasaCultural1JPG },
       slug: 'mombasa-cultural-village',
       highlight: 'Cultural preservation & education'
     },
@@ -47,7 +50,7 @@ const InnovatorsSection = () => {
       name: 'Studio Bella Bella',
       description: 'Creative oasis in Bamburi offering artistic services including art classes, pottery, and photography under the innovative project \'Sanaa Kivulini.\'',
       icon: Palette,
-      image: sitevisit1,
+  image: { webp: sitevisit1WebP, jpg: sitevisit1JPG },
       slug: 'studio-bella-bella',
       highlight: 'Community art hub'
     },
@@ -56,7 +59,7 @@ const InnovatorsSection = () => {
       name: 'Umoja wa Pwani',
       description: 'Explore the rich cultural tapestry of the Swahili people with traditional houses, artifacts, cultural demonstrations, and unique noodle-making experiences.',
       icon: TreePine,
-      image: umojaWaPwani1,
+  image: { webp: umojaWaPwani1WebP, jpg: umojaWaPwani1JPG },
       slug: 'umoja-wa-pwani',
       highlight: 'Swahili cultural immersion'
     }
@@ -86,7 +89,8 @@ const InnovatorsSection = () => {
                   {innovator.image ? (
                     <div className="h-48 overflow-hidden">
                       <img 
-                        src={innovator.image} 
+                        src={innovator.image.webp}
+                        srcSet={`${innovator.image.webp} 1x, ${innovator.image.jpg} 2x`}
                         alt={innovator.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
